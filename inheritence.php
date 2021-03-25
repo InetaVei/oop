@@ -1,4 +1,6 @@
 <?php 
+    /*---------- IS A ------------*/
+    
     class Person {
         private $name;
         private $lastname;

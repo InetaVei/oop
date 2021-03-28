@@ -5,7 +5,7 @@ abstract class Car { // Parent class
     public function __construct($name) {
     $this->name = $name;
     }
-    abstract public function intro() : string;
+    abstract public function intro() : string;  // si f-ja neturi body
    }
    class Audi extends Car { // Child classes
     public function intro() : string {
@@ -14,6 +14,8 @@ abstract class Car { // Parent class
    }
     // Fatal error: Uncaught Error: Cannot instantiate abstract class Car
     // var_dump(new Car("A8"))
+
+    print (new Audi('A8'))->intro();
 
 
 ?>
